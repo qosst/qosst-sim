@@ -23,9 +23,12 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.9, <3.13"
-qosst-core = "^0.10.0"
-qosst-skr = "^0.10.0"
+python = ">=3.9, <3.14"
+#qosst-core = "^0.10.0"
+qosst-core = { git = "https://github.com/qosst/qosst-core", branch = "dev" }
+#qosst-skr = "^0.10.0"
+qosst-skr = { git = "https://github.com/qosst/qosst-skr", branch = "dev" }
+
 
 [tool.poetry.group.dev.dependencies]
 Sphinx = "^5.3.0"
